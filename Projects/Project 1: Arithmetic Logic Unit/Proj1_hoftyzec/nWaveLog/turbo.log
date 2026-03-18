@@ -1,0 +1,3 @@
+Command Line: /CMC/tools/synopsys/verdi_vS-2021.09-SP1-1/verdi/S-2021.09-SP1-1/platform/LINUXAMD64/bin/Novas -nWave waves/tb_I4.vcd
+uname(Linux vcl-vm0-84 4.18.0-553.27.1.el8_10.x86_64 #1 SMP Wed Nov 6 14:29:02 UTC 2024 x86_64)
+au time 5.443188 1.312449 0.133905 delta 190713856 190713856 total 696164352 696164352

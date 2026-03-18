@@ -1,0 +1,458 @@
+$date
+    Feb 11, 2026  18:33:26
+$end
+$version
+    TOOL:	xmsim(64)	24.03-s013
+$end
+$timescale
+    1 ps
+$end
+
+$scope module tb $end
+$var parameter 32 !    INT_W $end
+$var parameter 32 "    FRAC_W $end
+$var parameter 32 #    INST_W $end
+$var parameter 32 $    DATA_W $end
+$var reg       1 %    i_clk $end
+$var reg       1 &    i_rst_n $end
+$var reg       1 '    i_valid $end
+$var reg      12 (    i_data_a [11:0] $end
+$var reg      12 )    i_data_b [11:0] $end
+$var reg       3 *    i_inst [2:0] $end
+$var wire      1 +    o_valid  $end
+$var wire     12 ,    o_data [11:0] $end
+$var wire      1 -    o_overflow  $end
+$var integer  32 .    i $end
+$var integer  32 /    j $end
+$var integer  32 0    error $end
+$var reg      27 1    inst_idata[0] [26:0] $end
+$var reg      27 2    inst_idata[1] [26:0] $end
+$var reg      27 3    inst_idata[2] [26:0] $end
+$var reg      27 4    inst_idata[3] [26:0] $end
+$var reg      27 5    inst_idata[4] [26:0] $end
+$var reg      13 6    inst_odata[0] [12:0] $end
+$var reg      13 7    inst_odata[1] [12:0] $end
+$var reg      13 8    inst_odata[2] [12:0] $end
+$var reg      13 9    inst_odata[3] [12:0] $end
+$var reg      13 :    inst_odata[4] [12:0] $end
+$var reg      12 ;    test_inA [11:0] $end
+$var reg      12 <    test_inB [11:0] $end
+$var reg       3 =    test_inst [2:0] $end
+$var reg       1 >    test_outO $end
+$var reg      12 ?    test_outD [11:0] $end
+
+$scope module u_alu $end
+$var wire      1 @    i_clk  $end
+$var wire      1 A    i_rst_n  $end
+$var wire      1 B    i_valid  $end
+$var wire     12 C    i_data_a [11:0] $end
+$var wire     12 D    i_data_b [11:0] $end
+$var wire      3 E    i_inst [2:0] $end
+$var wire      1 +    o_valid  $end
+$var wire     12 ,    o_data [11:0] $end
+$var wire      1 -    o_overflow  $end
+$var reg      12 F    o_data_w [11:0] $end
+$var reg      12 G    o_data_r [11:0] $end
+$var reg       1 H    o_valid_w $end
+$var reg       1 I    o_valid_r $end
+$var reg       1 J    o_overflow_w $end
+$var reg       1 K    o_overflow_r $end
+$var reg       1 L    valid $end
+$var reg      12 M    data_a [11:0] $end
+$var reg      12 N    data_b [11:0] $end
+$var reg       3 O    inst [2:0] $end
+$var reg       1 P    mac_ff $end
+$var reg      12 Q    mac_sum_ff [11:0] $end
+$var reg       1 R    mac_overflow_ff $end
+$var reg      24 S    prod_long [23:0] $end
+$var reg      24 T    prod_long_round [23:0] $end
+$var reg      12 U    prod [11:0] $end
+$var reg       1 V    mul_overflow $end
+$var reg       1 W    mac_active $end
+$var reg      12 X    mac_operand_ctrl [11:0] $end
+$var reg      12 Y    mul_data [11:0] $end
+$var reg       1 Z    mac_sum_overflow $end
+$var reg       1 [    mac_overflow $end
+$var reg       1 \    sub $end
+$var reg      12 ]    data_b_ctrl [11:0] $end
+$var reg      12 ^    add_sub_data [11:0] $end
+$var reg       1 _    add_sub_overflow $end
+$var reg      12 `    xnor_data [11:0] $end
+$var reg      12 a    relu_data [11:0] $end
+$var reg      13 b    sum_long [12:0] $end
+$var reg      13 c    mean_long [12:0] $end
+$var reg      12 d    mean_data [11:0] $end
+$var reg      12 e    abs_data_a [11:0] $end
+$var reg      12 f    abs_data_b [11:0] $end
+$var reg      12 g    abs_max_data [11:0] $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+b1100 $
+b11 #
+b101 "
+b111 !
+0%
+1&
+0'
+b0 (
+b0 )
+b0 *
+x+
+bx ,
+x-
+b0 .
+b0 /
+b0 0
+b11000011000001000011001100 1
+b11111101001001000011001010 2
+b11111100101101000011000000 3
+b11000010010100111100010001 4
+b11000010011010000010111010 5
+b10011001110 6
+b1001011 7
+b101101011001 8
+b1011100001000 9
+b1101010000111 :
+bx ;
+bx <
+bx =
+x>
+bx ?
+0@
+1A
+0B
+b0 C
+b0 D
+b0 E
+b0 F
+bx G
+0H
+xI
+0J
+xK
+0L
+b0 M
+b0 N
+b0 O
+xP
+bx Q
+xR
+b0 S
+b10000 T
+b0 U
+0V
+0W
+b0 X
+b0 Y
+0Z
+x[
+0\
+b0 ]
+b0 ^
+0_
+b111111111111 `
+b0 a
+bx b
+b0 c
+b0 d
+b0 e
+b0 f
+b0 g
+$end
+#2500
+0&
+0A
+b0 G
+0K
+0I
+0P
+b0 Q
+0R
+0[
+0+
+0-
+b0 ,
+#5000
+1%
+1@
+#10000
+0%
+0@
+#15000
+1%
+1@
+#20000
+0%
+0@
+#22500
+1&
+1A
+#25000
+1%
+1@
+#30000
+0%
+0@
+#35000
+1%
+1@
+#40000
+0%
+1'
+b11001100 (
+b11000001 )
+b11 *
+b1 .
+b11 E
+b11000001 D
+b11001100 C
+1B
+0@
+1L
+b11001100 M
+b11000001 N
+b11 O
+b1001100111001100 S
+b1001100111011100 T
+b10011001110 U
+b10011001110 Y
+b11000001 ]
+b110001101 ^
+b111111110010 `
+b11001100 a
+b110001101 c
+b11000110 d
+b11001100 e
+b11000001 f
+b11001100 g
+1H
+b10011001110 F
+#45000
+1%
+1@
+b10011001110 G
+1I
+1P
+b10011001110 Q
+1W
+b10011001110 X
+b100110011100 Y
+1Z
+1[
+b0 F
+b100110011100 F
+1J
+1+
+b10011001110 ,
+#50000
+0%
+b11001100 ;
+b11000001 <
+b11 =
+0>
+b10011001110 ?
+b1 /
+b11001010 (
+b111101001001 )
+b10 .
+b111101001001 D
+b11001010 C
+0@
+b11001010 M
+b111101001001 N
+b111111110110111110011010 S
+b111111110110111110101001 T
+b101101111101 U
+b1001011 Y
+0Z
+0[
+b111101001001 ]
+b10011 ^
+b1111100 `
+b11001010 a
+b10011 c
+b1001 d
+b11001010 e
+b10110111 f
+b11001010 g
+b0 F
+0J
+b1001011 F
+#55000
+1%
+1@
+b1001011 G
+b1001011 Q
+b1001011 X
+b101111001000 Y
+b0 F
+b101111001000 F
+b1001011 ,
+#60000
+0%
+b11001010 ;
+b111101001001 <
+b1001011 ?
+b10 /
+b11000000 (
+b111100101101 )
+b11 .
+b111100101101 D
+b11000000 C
+0@
+b11000000 M
+b111100101101 N
+b111111110110000111000000 S
+b111111110110000111001111 T
+b101100001110 U
+b101101011001 Y
+b111100101101 ]
+b111111101101 ^
+b10010 `
+b11000000 a
+b1111111101101 c
+b111111110110 d
+b11000000 e
+b11010011 f
+b11010011 g
+b0 F
+b101101011001 F
+#65000
+1%
+1@
+b101101011001 G
+b101101011001 Q
+b101101011001 X
+b11001100111 Y
+1Z
+1[
+b0 F
+b11001100111 F
+1J
+b101101011001 ,
+#70000
+0%
+b11000000 ;
+b111100101101 <
+b101101011001 ?
+b11 /
+b111100010001 (
+b10010100 )
+b100 .
+b10010100 D
+b111100010001 C
+0@
+b111100010001 M
+b10010100 N
+b111111110111010111010100 S
+b111111110111010111100011 T
+b101110101111 U
+b11100001000 Y
+b10010100 ]
+b111110100101 ^
+b1111010 `
+b0 a
+b1111110100101 c
+b111111010010 d
+b11101111 e
+b10010100 f
+b11101111 g
+b0 F
+0J
+b11100001000 F
+1J
+#75000
+1%
+1@
+b11100001000 G
+1K
+b11100001000 Q
+1R
+b11100001000 X
+b1010110111 Y
+0Z
+b0 F
+0J
+b1010110111 F
+1J
+1-
+b11100001000 ,
+#80000
+0%
+b111100010001 ;
+b10010100 <
+1>
+b11100001000 ?
+b100 /
+b10111010 (
+b10011010 )
+b101 .
+b10011010 D
+b10111010 C
+0@
+b10111010 M
+b10011010 N
+b110111111100100 S
+b110111111110100 T
+b1101111111 U
+b101010000111 Y
+1Z
+b10011010 ]
+b101010100 ^
+b111111011111 `
+b10111010 a
+b101010100 c
+b10101010 d
+b10111010 e
+b10011010 f
+b10111010 g
+b0 F
+0J
+b101010000111 F
+1J
+#85000
+1%
+1@
+b101010000111 G
+b101010000111 Q
+b101010000111 X
+b111000000110 Y
+0Z
+b0 F
+0J
+b111000000110 F
+1J
+b101010000111 ,
+#90000
+0%
+b10111010 ;
+b10011010 <
+b101010000111 ?
+b101 /
+0'
+0B
+0@
+0L
+b0 F
+0J
+0H
+b111000000110 F
+1J
+#95000
+1%
+1@
+b111000000110 G
+0I
+0+
+b111000000110 ,
+#100000
+0%
+0@
+#105000
+1%
+1@
+#110000
