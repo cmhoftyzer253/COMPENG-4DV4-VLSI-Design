@@ -1,0 +1,8 @@
+#e1(06Mar2026:18:25:41): source ./xcelium.d/env.d/env.history.06Mar2026_18_25_41
+s1(06Mar2026:18:25:41):  xmverilog -clean 00_TESTBED/testbed.vp 00_TESTBED/data_mem.vp 00_TESTBED/inst_mem.vp 00_TESTBED/define.v 01_RTL/core.v 01_RTL/alu.v 01_RTL/register_file.v +incdir+00_TESTBED +incdir+01_RTL +access+rw 
+#e2(14Mar2026:23:51:27): source ./xcelium.d/env.d/env.history.14Mar2026_23_51_27
+s2(14Mar2026:23:51:27):  xmverilog ../00_TESTBED/testbed_temp.v ../00_TESTBED/define.v ../00_TESTBED/inst_mem.vp ../00_TESTBED/data_mem.vp core.v alu.v register_file.v +access+rw +define+P2 
+#e3(15Mar2026:04:01:45): source ./xcelium.d/env.d/env.history.15Mar2026_04_01_45
+s3(15Mar2026:04:01:45):  ncverilog +define+P0 +access+r ../00_TESTBED/testbed_temp.v ../00_TESTBED/inst_mem.vp ../00_TESTBED/data_mem.vp ./outputs/core_syn.v -v ./lib/asap7sc7p5t_28_R/REV26/HVT/verilog/asap7sc7p5t_28_R_HVT_TT_211120.v -v ./lib/asap7sc7p5t_28_R/REV26/LVT/verilog/asap7sc7p5t_28_R_LVT_TT_211120.v -v ./lib/asap7sc7p5t_28_R/REV26/SLVT/verilog/asap7sc7p5t_28_R_SLVT_TT_211120.v -v ./lib/asap7sc7p5t_28_R/REV26/SRAM/verilog/asap7sc7p5t_28_R_SRAM_TT_211120.v 
+#e4(15Mar2026:04:28:57): source ./xcelium.d/env.d/env.history.15Mar2026_04_28_57
+s4(15Mar2026:04:28:57):  xmverilog ../00_TESTBED/testbed.vp ../00_TESTBED/define.v ../00_TESTBED/inst_mem.vp ../00_TESTBED/data_mem.vp core.v alu.v register_file.v +access+rw +define+p0 
