@@ -1,0 +1,38 @@
+ 
+****************************************
+Report : area
+Design : core
+Version: U-2022.12
+Date   : Sun Mar 15 16:10:30 2026
+****************************************
+
+Library(s) Used:
+
+    asap7sc7p5t_INVBUF_SLVT_TT_nldm_211120 (File: /home/v72180/mydata/MiniProject_02/lib/db/asap7sc7p5t_INVBUF_SLVT_TT_nldm_211120.db)
+    asap7sc7p5t_AO_LVT_TT_nldm_211120 (File: /home/v72180/mydata/MiniProject_02/lib/db/asap7sc7p5t_AO_LVT_TT_nldm_211120.db)
+    asap7sc7p5t_SIMPLE_LVT_TT_nldm_211120 (File: /home/v72180/mydata/MiniProject_02/lib/db/asap7sc7p5t_SIMPLE_LVT_TT_nldm_211120.db)
+    asap7sc7p5t_SIMPLE_SLVT_TT_nldm_211120 (File: /home/v72180/mydata/MiniProject_02/lib/db/asap7sc7p5t_SIMPLE_SLVT_TT_nldm_211120.db)
+    asap7sc7p5t_AO_SLVT_TT_nldm_211120 (File: /home/v72180/mydata/MiniProject_02/lib/db/asap7sc7p5t_AO_SLVT_TT_nldm_211120.db)
+    asap7sc7p5t_OA_SLVT_TT_nldm_211120 (File: /home/v72180/mydata/MiniProject_02/lib/db/asap7sc7p5t_OA_SLVT_TT_nldm_211120.db)
+    asap7sc7p5t_SEQ_LVT_TT_nldm_220123 (File: /home/v72180/mydata/MiniProject_02/lib/db/asap7sc7p5t_SEQ_LVT_TT_nldm_220123.db)
+    asap7sc7p5t_INVBUF_LVT_TT_nldm_211120 (File: /home/v72180/mydata/MiniProject_02/lib/db/asap7sc7p5t_INVBUF_LVT_TT_nldm_211120.db)
+    asap7sc7p5t_OA_LVT_TT_nldm_211120 (File: /home/v72180/mydata/MiniProject_02/lib/db/asap7sc7p5t_OA_LVT_TT_nldm_211120.db)
+
+Number of ports:                          754
+Number of nets:                          5765
+Number of cells:                         5102
+Number of combinational cells:           3908
+Number of sequential cells:              1188
+Number of macros/black boxes:               0
+Number of buf/inv:                        627
+Number of references:                      38
+
+Combinational area:                330.732721
+Buf/Inv area:                       27.993600
+Noncombinational area:             450.347037
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                   781.079759
+Total area:                 undefined
+1

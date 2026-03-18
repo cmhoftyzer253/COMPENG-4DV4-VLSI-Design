@@ -1,0 +1,131 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'core' contains 3 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : core
+Version: U-2022.12
+Date   : Sun Mar 15 16:10:25 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: PVT_0P7V_25C   Library: asap7sc7p5t_AO_LVT_TT_nldm_211120
+Wire Load Model Mode: top
+
+  Startpoint: state_reg[2]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: branch_taken_q_reg
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  state_reg[2]/CLK (DFFASRHQNx1_ASAP7_75t_L)              0.00 #     0.00 r
+  state_reg[2]/QN (DFFASRHQNx1_ASAP7_75t_L)              41.18      41.18 f
+  U1573/Y (INVx1_ASAP7_75t_SL)                           13.09      54.28 r
+  U1404/Y (NAND3xp33_ASAP7_75t_SL)                       29.26      83.53 f
+  U1572/Y (INVx1_ASAP7_75t_SL)                           28.48     112.02 r
+  U714/Y (NAND2xp5_ASAP7_75t_SL)                         82.68     194.70 f
+  U713/Y (OAI22xp5_ASAP7_75t_SL)                         66.08     260.77 r
+  u_alu/i_opr_a[0] (alu_DATA_W32)                         0.00     260.77 r
+  u_alu/r63/A[0] (alu_DATA_W32_DW01_add_0_DW01_add_1)     0.00     260.77 r
+  u_alu/r63/U2/Y (AND2x2_ASAP7_75t_SL)                   15.97     276.74 r
+  u_alu/r63/U1_1/CON (FAx1_ASAP7_75t_SL)                 11.64     288.39 f
+  u_alu/r63/U32/Y (INVx1_ASAP7_75t_SL)                   14.58     302.96 r
+  u_alu/r63/U1_2/CON (FAx1_ASAP7_75t_SL)                 13.14     316.11 f
+  u_alu/r63/U31/Y (INVx1_ASAP7_75t_SL)                   14.58     330.68 r
+  u_alu/r63/U1_3/CON (FAx1_ASAP7_75t_SL)                 13.14     343.83 f
+  u_alu/r63/U30/Y (INVx1_ASAP7_75t_SL)                   14.58     358.40 r
+  u_alu/r63/U1_4/CON (FAx1_ASAP7_75t_SL)                 13.14     371.55 f
+  u_alu/r63/U29/Y (INVx1_ASAP7_75t_SL)                   14.58     386.12 r
+  u_alu/r63/U1_5/CON (FAx1_ASAP7_75t_SL)                 13.14     399.26 f
+  u_alu/r63/U28/Y (INVx1_ASAP7_75t_SL)                   14.58     413.84 r
+  u_alu/r63/U1_6/CON (FAx1_ASAP7_75t_SL)                 13.14     426.98 f
+  u_alu/r63/U27/Y (INVx1_ASAP7_75t_SL)                   14.58     441.56 r
+  u_alu/r63/U1_7/CON (FAx1_ASAP7_75t_SL)                 13.14     454.70 f
+  u_alu/r63/U26/Y (INVx1_ASAP7_75t_SL)                   14.58     469.28 r
+  u_alu/r63/U1_8/CON (FAx1_ASAP7_75t_SL)                 13.14     482.42 f
+  u_alu/r63/U25/Y (INVx1_ASAP7_75t_SL)                   14.58     497.00 r
+  u_alu/r63/U1_9/CON (FAx1_ASAP7_75t_SL)                 13.14     510.14 f
+  u_alu/r63/U24/Y (INVx1_ASAP7_75t_SL)                   14.58     524.72 r
+  u_alu/r63/U1_10/CON (FAx1_ASAP7_75t_SL)                13.14     537.86 f
+  u_alu/r63/U23/Y (INVx1_ASAP7_75t_SL)                   14.58     552.44 r
+  u_alu/r63/U1_11/CON (FAx1_ASAP7_75t_SL)                13.14     565.58 f
+  u_alu/r63/U22/Y (INVx1_ASAP7_75t_SL)                   14.58     580.16 r
+  u_alu/r63/U1_12/CON (FAx1_ASAP7_75t_SL)                13.14     593.30 f
+  u_alu/r63/U21/Y (INVx1_ASAP7_75t_SL)                   14.58     607.88 r
+  u_alu/r63/U1_13/CON (FAx1_ASAP7_75t_SL)                13.14     621.02 f
+  u_alu/r63/U20/Y (INVx1_ASAP7_75t_SL)                   14.58     635.60 r
+  u_alu/r63/U1_14/CON (FAx1_ASAP7_75t_SL)                13.14     648.74 f
+  u_alu/r63/U19/Y (INVx1_ASAP7_75t_SL)                   14.58     663.32 r
+  u_alu/r63/U1_15/CON (FAx1_ASAP7_75t_SL)                13.14     676.46 f
+  u_alu/r63/U18/Y (INVx1_ASAP7_75t_SL)                   14.58     691.04 r
+  u_alu/r63/U1_16/CON (FAx1_ASAP7_75t_SL)                13.14     704.18 f
+  u_alu/r63/U17/Y (INVx1_ASAP7_75t_SL)                   15.05     719.23 r
+  u_alu/r63/U1_17/CON (FAx1_ASAP7_75t_SL)                13.24     732.47 f
+  u_alu/r63/U16/Y (INVx1_ASAP7_75t_SL)                   15.05     747.52 r
+  u_alu/r63/U1_18/CON (FAx1_ASAP7_75t_SL)                13.24     760.76 f
+  u_alu/r63/U15/Y (INVx1_ASAP7_75t_SL)                   15.05     775.81 r
+  u_alu/r63/U1_19/CON (FAx1_ASAP7_75t_SL)                13.24     789.05 f
+  u_alu/r63/U14/Y (INVx1_ASAP7_75t_SL)                   15.05     804.10 r
+  u_alu/r63/U1_20/CON (FAx1_ASAP7_75t_SL)                13.24     817.34 f
+  u_alu/r63/U13/Y (INVx1_ASAP7_75t_SL)                   15.05     832.39 r
+  u_alu/r63/U1_21/CON (FAx1_ASAP7_75t_SL)                13.24     845.63 f
+  u_alu/r63/U12/Y (INVx1_ASAP7_75t_SL)                   15.05     860.68 r
+  u_alu/r63/U1_22/CON (FAx1_ASAP7_75t_SL)                13.24     873.92 f
+  u_alu/r63/U11/Y (INVx1_ASAP7_75t_SL)                   15.05     888.97 r
+  u_alu/r63/U1_23/CON (FAx1_ASAP7_75t_SL)                13.24     902.21 f
+  u_alu/r63/U10/Y (INVx1_ASAP7_75t_SL)                   15.05     917.26 r
+  u_alu/r63/U1_24/CON (FAx1_ASAP7_75t_SL)                13.24     930.49 f
+  u_alu/r63/U9/Y (INVx1_ASAP7_75t_SL)                    15.05     945.55 r
+  u_alu/r63/U1_25/CON (FAx1_ASAP7_75t_SL)                13.24     958.78 f
+  u_alu/r63/U8/Y (INVx1_ASAP7_75t_SL)                    15.05     973.83 r
+  u_alu/r63/U1_26/CON (FAx1_ASAP7_75t_SL)                13.24     987.07 f
+  u_alu/r63/U7/Y (INVx1_ASAP7_75t_SL)                    15.05    1002.12 r
+  u_alu/r63/U1_27/CON (FAx1_ASAP7_75t_SL)                13.24    1015.36 f
+  u_alu/r63/U6/Y (INVx1_ASAP7_75t_SL)                    15.05    1030.41 r
+  u_alu/r63/U1_28/CON (FAx1_ASAP7_75t_SL)                13.24    1043.65 f
+  u_alu/r63/U5/Y (INVx1_ASAP7_75t_SL)                    15.05    1058.70 r
+  u_alu/r63/U1_29/CON (FAx1_ASAP7_75t_SL)                13.24    1071.94 f
+  u_alu/r63/U4/Y (INVx1_ASAP7_75t_SL)                    15.05    1086.99 r
+  u_alu/r63/U1_30/CON (FAx1_ASAP7_75t_SL)                13.24    1100.23 f
+  u_alu/r63/U3/Y (INVx1_ASAP7_75t_SL)                    15.06    1115.29 r
+  u_alu/r63/U1_31/SN (FAx1_ASAP7_75t_SL)                 26.78    1142.07 f
+  u_alu/r63/U41/Y (INVx1_ASAP7_75t_L)                    15.49    1157.56 r
+  u_alu/r63/SUM[31] (alu_DATA_W32_DW01_add_0_DW01_add_1)
+                                                          0.00    1157.56 r
+  u_alu/U47/Y (NOR5xp2_ASAP7_75t_SL)                     10.10    1167.66 f
+  u_alu/U44/Y (NAND5xp2_ASAP7_75t_SL)                    13.67    1181.32 r
+  u_alu/U41/Y (NOR5xp2_ASAP7_75t_SL)                      9.98    1191.30 f
+  u_alu/U40/Y (OR4x1_ASAP7_75t_SL)                       22.21    1213.51 f
+  u_alu/U49/Y (O2A1O1Ixp33_ASAP7_75t_SL)                 13.31    1226.82 r
+  u_alu/o_overflow (alu_DATA_W32)                         0.00    1226.82 r
+  U1332/Y (NOR2xp33_ASAP7_75t_SL)                        41.28    1268.10 f
+  U1287/Y (HB1xp67_ASAP7_75t_SL)                         78.74    1346.83 f
+  U1321/Y (INVx1_ASAP7_75t_SL)                           93.02    1439.85 r
+  U1334/Y (NOR3xp33_ASAP7_75t_SL)                        13.00    1452.85 f
+  U1333/Y (NAND4xp25_ASAP7_75t_SL)                       17.33    1470.18 r
+  U1167/Y (OA21x2_ASAP7_75t_SL)                          15.32    1485.50 r
+  branch_taken_q_reg/D (DFFASRHQNx1_ASAP7_75t_L)          0.00    1485.50 r
+  data arrival time                                               1485.50
+
+  clock i_clk (rise edge)                              9999.00    9999.00
+  clock network delay (ideal)                             0.00    9999.00
+  branch_taken_q_reg/CLK (DFFASRHQNx1_ASAP7_75t_L)        0.00    9999.00 r
+  library setup time                                    -17.14    9981.86
+  data required time                                              9981.86
+  --------------------------------------------------------------------------
+  data required time                                              9981.86
+  data arrival time                                              -1485.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                     8496.36
+
+
+1

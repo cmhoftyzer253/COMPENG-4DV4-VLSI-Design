@@ -1,0 +1,15 @@
+//
+// File created by:  xmverilog
+// Do not modify this file
+//
+-clean
+testbed.vp
+data_mem.vp
+inst_mem.vp
+define.v
+../01_RTL/core.v
+../01_RTL/alu.v
+../01_RTL/register_file.v
++incdir+.
++incdir+../01_RTL
++access+rw

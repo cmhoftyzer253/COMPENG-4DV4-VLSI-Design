@@ -1,0 +1,2 @@
+#e1(15Mar2026:00:11:23): source ./xcelium.d/env.d/env.history.15Mar2026_00_11_23
+s1(15Mar2026:00:11:23):  xmverilog ../00_TESTBED/testbed_temp.v ../00_TESTBED/define.v ../00_TESTBED/inst_mem.vp ../00_TESTBED/data_mem.vp core.v alu.v register_file.v +access+rw +define+P4 

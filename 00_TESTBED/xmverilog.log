@@ -1,0 +1,16 @@
+xmverilog(64): 24.03-s013: (c) Copyright 1995-2025 Cadence Design Systems, Inc.
+TOOL:	xmverilog	24.03-s013: Started on Mar 15, 2026 at 04:09:42 EDT
+xmverilog
+	../00_TESTBED/testbed.vp
+	../00_TESTBED/define.v
+	../00_TESTBED/inst_mem.vp
+	../00_TESTBED/data_mem.vp
+	core.v
+	alu.v
+	register_file.v
+	+access+rw
+	+define+P0
+xmverilog: *SE,FILEMIS: Cannot find the provided file core.v.
+xmverilog: *SE,FILEMIS: Cannot find the provided file alu.v.
+xmverilog: *SE,FILEMIS: Cannot find the provided file register_file.v.
+TOOL:	xmverilog	24.03-s013: Exiting on Mar 15, 2026 at 04:09:42 EDT  (total: 00:00:00)
